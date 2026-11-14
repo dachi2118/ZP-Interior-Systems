@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10110f">
+
+<title>ZP Interior Systems | Pladur, Techos y Aislamiento</title>
+<meta name="description" content="ZP Interior Systems. Servicios de pladur, techos falsos y aislamiento en Cataluña. Más de 15 años de experiencia.">
+
+<!-- LOGO DE LA PESTAÑA -->
+<link rel="icon" type="image/png" href="ZP%20logo.png">
+<link rel="apple-touch-icon" href="ZP%20logo.png">
+
+<style>
+:root {
+  --bg: #10110f;
+  --bg-soft: #171815;
+  --card: #20211c;
+  --gold: #d8b16d;
+  --gold-light: #f0d7a8;
+  --white: #f8f6f0;
+  --muted: #b9b8af;
+  --line: rgba(216,177,109,.23);
+  --green: #25d366;
+  --container: 1160px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(var(--container), 90%);
+  margin-inline: auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-dark {
+  background: var(--bg-soft);
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.section-heading {
+  max-width: 740px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.section-heading h2,
+.about-content h2,
+.contact-content h2 {
+  margin-top: 14px;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  line-height: 1.13;
+  letter-spacing: -1px;
+}
+
+.section-heading p {
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 49px;
+  padding: 13px 23px;
+  border: 1px solid var(--gold);
+  border-radius: 7px;
+  font-size: .91rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #15140f;
+}
+
+.btn-primary:hover {
+  background: var(--gold-light);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background: rgba(216,177,109,.1);
+}
+
+.btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* CABECERA */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(16,17,15,.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+}
+
+.navbar {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* LOGO REAL DE ZP */
+.brand-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.brand-name {
+  display: block;
+  font-size: .9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.brand-subtitle {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: .61rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+}
+
+.nav-links a:not(.btn) {
+  color: #e4e1d8;
+  font-size: .87rem;
+  transition: color .2s;
+}
+
+.nav-links a:not(.btn):hover {
+  color: var(--gold);
+}
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* PORTADA */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 85% 30%, rgba(216,177,109,.14), transparent 43%),
+    linear-gradient(125deg, #10110f 25%, #1a1b16 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 580px;
+  height: 580px;
+  right: -180px;
+  bottom: -270px;
+  border: 1px solid rgba(216,177,109,.22);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 55px rgba(216,177,109,.025),
+    0 0 0 110px rgba(216,177,109,.018);
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 100px 0;
+  animation: hero-in .8s ease both;
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.hero-label::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.hero h1 {
+  margin: 24px 0;
+  font-size: clamp(2.7rem, 6.7vw, 5.5rem);
+  line-height: 1.02;
+  letter-spacing: -2px;
+}
+
+.hero-description {
+  max-width: 640px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.hero-proof {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 39px;
+}
+
+.hero-proof-number {
+  color: var(--gold);
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-proof-text {
+  color: var(--muted);
+  font-size: .89rem;
+  line-height: 1.5;
+}
+
+.hero-proof-divider {
+  width: 1px;
+  height: 43px;
+  background: var(--line);
+}
+
+/* VENTAJAS */
+
+.trust-strip {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #151612;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trust-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  padding: 26px 16px;
+  border-right: 1px solid var(--line);
+}
+
+.trust-item:last-child {
+  border-right: 0;
+}
+
+.trust-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: var(--gold);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.trust-icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.trust-item strong {
+  display: block;
+  font-size: .91rem;
+}
+
+.trust-item span {
+  display: block;
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+/* SERVICIOS */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.service-card {
+  padding: 32px 28px;
+  background: linear-gradient(145deg, #20211c, #181914);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  transition: transform .25s, border-color .25s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(216,177,109,.7);
+}
+
+.service-icon {
+  width: 57px;
+  height: 57px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px;
+  color: var(--gold);
+  background: rgba(216,177,109,.09);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.service-icon svg {
+  width: 29px;
+  height: 29px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card h3 {
+  margin-bottom: 13px;
+  font-size: 1.25rem;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.service-more {
+  display: inline-block;
+  margin-top: 22px;
+  color: var(--gold);
+  font-size: .87rem;
+  font-weight: 700;
+}
+
+/* SOBRE MÍ Y FOTOGRAFÍA */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.about-visual {
+  position: relative;
+  min-height: 465px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  background: #22231e;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 18px 55px rgba(0,0,0,.24);
+}
+
+.about-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(0deg, rgba(12,13,11,.95), rgba(12,13,11,.1) 72%),
+    url("Ejemplo obra.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: transform .6s;
+}
+
+.about-visual:hover::before {
+  transform: scale(1.035);
+}
+
+.experience-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 24px;
+  background: rgba(16,17,15,.9);
+  border-left: 3px solid var(--gold);
+  backdrop-filter: blur(8px);
+}
+
+.experience-card strong {
+  display: block;
+  color: var(--gold);
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+.experience-card span {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.about-content h2 {
+  margin-bottom: 23px;
+}
+
+.about-content > p {
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.about-list {
+  display: grid;
+  gap: 12px;
+  margin: 27px 0 30px;
+  list-style: none;
+}
+
+.about-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.check-icon {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--gold);
+}
+
+.check-icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* CÓMO TRABAJAMOS */
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.step-card {
+  padding: 30px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.step-number {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.step-card h3 {
+  margin: 17px 0 12px;
+  font-size: 1.18rem;
+}
+
+.step-card p {
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.step-line {
+  width: 44px;
+  height: 2px;
+  margin-top: 23px;
+  background: var(--gold);
+}
+
+/* OPINIONES */
+
+.reviews-panel {
+  max-width: 830px;
+  margin: 0 auto;
+  padding: clamp(26px, 5vw, 48px);
+  text-align: center;
+  background: linear-gradient(145deg, #20211c, #171814);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.reviews-stars {
+  color: var(--gold);
+  font-size: 1.65rem;
+  letter-spacing: 6px;
+}
+
+.reviews-panel h3 {
+  margin: 16px 0 12px;
+  font-size: 1.5rem;
+}
+
+.reviews-panel p {
+  max-width: 610px;
+  margin: 0 auto 25px;
+  color: var(--muted);
+}
+
+/* CONTACTO */
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 35px;
+  padding: clamp(28px, 5vw, 55px);
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(216,177,109,.13), transparent 52%),
+    #1c1d19;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.contact-content h2 {
+  margin-bottom: 18px;
+}
+
+.contact-content p {
+  max-width: 650px;
+  color: var(--muted);
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 230px;
+}
+
+.contact-phone {
+  text-align: center;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.contact-phone strong {
+  display: block;
+  color: var(--white);
+  font-size: 1.1rem;
+}
+
+/* PIE DE PÁGINA */
+
+.site-footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+  background: #0c0d0b;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-copy {
+  color: var(--muted);
+  font-size: .83rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+/* BOTÓN FLOTANTE WHATSAPP */
+
+.whatsapp-float {
+  position: fixed;
+  right: 23px;
+  bottom: 70p x;
+  z-index: 99999;
+  width: 61px;
+  height: 61px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--green);
+  border: 2px solid rgba(255,255,255,.2);
+  border-radius: 50%;
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+  transition: transform .22s, box-shadow .22s;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 32px rgba(37,211,102,.25);
+}
+
+.whatsapp-float svg {
+  display: block;
+  width: 34px;
+  height: 34px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* ANIMACIONES */
+
+.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s, transform .7s;
+}
+
+.js-ready .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .nav-links {
+    gap: 13px;
+  }
+
+  .nav-links a:not(.btn) {
+    font-size: .79rem;
+  }
+
+  .brand-name {
+    font-size: .79rem;
+  }
+
+  .brand-subtitle {
+    font-size: .55rem;
+  }
+
+  .about-grid {
+    gap: 38px;
+  }
+
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* MÓVILES */
+
+@media (max-width: 800px) {
+  .section {
+    padding: 78px 0;
+  }
+
+  .menu-toggle {
+    display: grid;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 84px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 20px 5% 40px;
+    overflow-y: auto;
+    background: #11120f;
+    border-top: 1px solid var(--line);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity .2s, transform .2s, visibility .2s;
+  }
+
+  .nav-links.open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-links a:not(.btn) {
+    display: block;
+    padding: 17px 0;
+    font-size: 1rem;
+  }
+
+  .nav-links .btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .services-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    min-height: 390px;
+  }
+
+  .trust-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    min-height: 74px;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-logo {
+    width: 43px;
+    height: 43px;
+  }
+
+  .brand-name {
+    font-size: .72rem;
+    letter-spacing: .5px;
+  }
+
+  .brand-subtitle {
+    font-size: .49rem;
+    letter-spacing: .6px;
+  }
+
+  .nav-links {
+    top: 74px;
+  }
+
+  .hero-content {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.55rem, 12vw, 3.8rem);
+    letter-spacing: -1.5px;
+  }
+
+  .hero-actions,
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn,
+  .contact-actions .btn {
+    width: 100%;
+  }
+
+  .hero-proof-number {
+    font-size: 1.8rem;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 19px 8px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .trust-item:last-child {
+    border-bottom: 0;
+  }
+
+  .about-visual {
+    min-height: 320px;
+    padding: 16px;
+  }
+
+  .experience-card {
+    padding: 18px;
+  }
+
+  .experience-card strong {
+    font-size: 2.1rem;
+  }
+
+  .footer-main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-float svg {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .js-ready .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ICONOS SVG -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     style="position:absolute;width:0;height:0;overflow:hidden"
+     aria-hidden="true">
+
+  <symbol id="icon-menu" viewBox="0 0 24 24">
+    <path d="M4 6h16M4 12h16M4 18h16"
+      fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-close" viewBox="0 0 24 24">
+    <path d="m6 6 12 12M18 6 6 18"
+      fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <path d="m5 12 4 4L19 6"
+      fill="none" stroke="currentColor" stroke-width="2.2"
+      stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-wall" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="18" height="18" rx="1"
+      fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M3 9h18M3 15h18M9 3v6m6 0v6m-6 0v6"
+      fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <symbol id="icon-ceiling" viewBox="0 0 24 24">
+    <path d="M3 8h18M5 8v10h14V8M8 11h8M8 14h8"
+      fill="none" stroke="currentColor" stroke-width="1.5"
+      stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-insulation" viewBox="0 0 24 24">
+    <path d="M12 3 3 8l9 5 9-5-9-5Z"
+      fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="m3 12 9 5 9-5M3 16l9 5 9-5"
+      fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <symbol id="icon-pin" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+      fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="12" cy="10" r="2.5"
+      fill="none" stroke="currentColor" stroke-width="1.6"/>
+  </symbol>
+
+  <symbol id="icon-star" viewBox="0 0 24 24">
+    <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"
+      fill="none" stroke="currentColor" stroke-width="1.5"
+      stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-arrow" viewBox="0 0 24 24">
+    <path d="M5 12h14m-6-6 6 6-6 6"
+      fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+    <path d="M16 .8C7.7.8 1 7.5 1 15.8c0 2.7.7 5.3 2.1 7.6L1 31l7.8-2.1a15 15 0 0 0 7.2 1.8h.1c8.3 0 15-6.7 15-15S24.4.8 16 .8Zm0 27.3c-2.3 0-4.5-.6-6.4-1.8l-.5-.3-4.6 1.2 1.2-4.5-.3-.5a12.2 12.2 0 1 1 10.6 5.9Zm6.7-9.1c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.8-2.2-2-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.3.4-.6.1-.1 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 3s1.3 3.4 1.5 3.7c.2.2 2.5 3.8 6.1 5.3.9.4 1.6.6 2.2.7.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5Z"/>
+  </symbol>
+</svg>
+
+<!-- CABECERA -->
+<header class="site-header">
+  <div class="container navbar">
+
+    <a class="brand" href="#inicio" aria-label="ZP Interior Systems, inicio">
+      <img class="brand-logo" src="ZP%20logo.png" alt="Logo de ZP Interior Systems">
+      <span>
+        <span class="brand-name">ZP INTERIOR SYSTEMS</span>
+        <span class="brand-subtitle">PLADUR · TECHOS · AISLAMIENTO</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+            type="button" aria-label="Abrir menú"
+            aria-expanded="false" aria-controls="navLinks">
+      <svg aria-hidden="true"><use href="#icon-menu"></use></svg>
+    </button>
+
+    <nav aria-label="Menú principal">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li>
+          <a class="btn btn-primary" href="#contacto">
+            Contactar
+            <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- INICIO -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-label">Especialistas en interiores</span>
+
+        <h1>
+          Instalaciones Pladur.<br>
+          <span class="gold">Cuidamos cada detalle.</span>
+        </h1>
+
+        <p class="hero-description">
+          Soluciones profesionales de pladur, techos falsos y aislamiento
+          para transformar espacios interiores. Experiencia, atención
+          personalizada y compromiso con cada proyecto en Cataluña.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">
+            Solicitar información
+            <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </a>
+
+          <a class="btn btn-secondary" href="#servicios">
+            Descubrir servicios
+          </a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="hero-proof-number">15+</div>
+          <div class="hero-proof-text">
+            Años de experiencia<br>en el sector
+          </div>
+          <div class="hero-proof-divider"></div>
+          <div class="hero-proof-text">
+            Atención profesional<br>en Cataluña
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTAJAS -->
+  <section class="trust-strip" aria-label="Nuestros valores">
+    <div class="container trust-grid">
+
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+        </div>
+        <div>
+          <strong>Experiencia</strong>
+          <span>Más de 15 años en el sector</span>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg aria-hidden="true"><use href="#icon-star"></use></svg>
+        </div>
+        <div>
+          <strong>Atención al detalle</strong>
+          <span>Enfoque en cada proyecto</span>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg aria-hidden="true"><use href="#icon-pin"></use></svg>
+        </div>
+        <div>
+          <strong>Cataluña</strong>
+          <span>Zona de trabajo</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <span class="eyebrow">Nuestros servicios</span>
+        <h2>Soluciones para cada <span class="gold">espacio</span></h2>
+        <p>
+          Trabajos de acondicionamiento interior adaptados
+          a las características de cada proyecto.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg aria-hidden="true"><use href="#icon-wall"></use></svg>
+          </div>
+          <h3>Instalación de pladur</h3>
+          <p>
+            Instalación de sistemas de placas de yeso laminado
+            para tabiques, trasdosados y distribución de espacios.
+          </p>
+          <a class="service-more" href="#contacto">Consultar proyecto →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg aria-hidden="true"><use href="#icon-ceiling"></use></svg>
+          </div>
+          <h3>Techos falsos</h3>
+          <p>
+            Soluciones de techos suspendidos para crear interiores
+            cuidados y adaptados a cada estancia.
+          </p>
+          <a class="service-more" href="#contacto">Consultar proyecto →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg aria-hidden="true"><use href="#icon-insulation"></use></svg>
+          </div>
+          <h3>Aislamiento</h3>
+          <p>
+            Soluciones de aislamiento interior orientadas a mejorar
+            el confort térmico y acústico, según las necesidades del espacio.
+          </p>
+          <a class="service-more" href="#contacto">Consultar proyecto →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section section-dark" id="sobre-mi">
+    <div class="container about-grid">
+
+      <div class="about-visual" role="img"
+           aria-label="Fotografía de una obra de interiorismo">
+        <div class="experience-card">
+          <strong>15+ años</strong>
+          <span>Experiencia profesional en el sector</span>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <span class="eyebrow">Sobre mí</span>
+
+        <h2>
+          Experiencia y dedicación en cada
+          <span class="gold">proyecto</span>
+        </h2>
+
+        <p>
+          En ZP Interior Systems, cada trabajo comienza escuchando
+          las necesidades del cliente y entendiendo las características
+          del espacio.
+        </p>
+
+        <p>
+          Con más de 15 años de experiencia en el sector, el objetivo
+          es ofrecer soluciones de pladur, techos falsos y aislamiento
+          con atención a los detalles, comunicación clara y un enfoque profesional.
+        </p>
+
+        <ul class="about-list">
+          <li>
+            <span class="check-icon">
+              <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+            </span>
+            Soluciones adaptadas a cada proyecto
+          </li>
+
+          <li>
+            <span class="check-icon">
+              <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+            </span>
+            Comunicación directa y personalizada
+          </li>
+
+          <li>
+            <span class="check-icon">
+              <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+            </span>
+            Atención a los acabados y los detalles
+          </li>
+
+          <li>
+            <span class="check-icon">
+              <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+            </span>
+            Servicio en Cataluña
+          </li>
+        </ul>
+
+        <a class="btn btn-secondary" href="#contacto">
+          Hablemos de tu proyecto
+          <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section" id="proceso">
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <span class="eyebrow">Nuestro proceso</span>
+        <h2>Tu proyecto, paso a <span class="gold">paso</span></h2>
+        <p>
+          Una forma de trabajar clara, desde la primera consulta
+          hasta la definición del trabajo.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+
+        <article class="step-card reveal">
+          <span class="step-number">01</span>
+          <h3>Cuéntanos tu idea</h3>
+          <p>
+            Explica qué necesitas, cómo es el espacio y qué resultado buscas.
+          </p>
+          <div class="step-line"></div>
+        </article>
+
+        <article class="step-card reveal">
+          <span class="step-number">02</span>
+          <h3>Valoramos el proyecto</h3>
+          <p>
+            Revisamos las necesidades del trabajo y hablamos de las posibles
+            soluciones y del presupuesto.
+          </p>
+          <div class="step-line"></div>
+        </article>
+
+        <article class="step-card reveal">
+          <span class="step-number">03</span>
+          <h3>Definimos el trabajo</h3>
+          <p>
+            Acordamos el alcance del proyecto y los siguientes pasos
+            antes de comenzar.
+          </p>
+          <div class="step-line"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section class="section section-dark" id="opiniones">
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <span class="eyebrow">Opiniones</span>
+        <h2>
+          La confianza se construye con
+          <span class="gold">hechos</span>
+        </h2>
+        <p>
+          Las experiencias reales de los clientes ayudan a conocer
+          el trabajo y el servicio.
+        </p>
+      </div>
+
+      <div class="reviews-panel reveal">
+        <div class="reviews-stars" aria-hidden="true">★★★★★</div>
+
+        <h3>¿Has trabajado con nosotros?</h3>
+
+        <p>
+          Si ya eres cliente, puedes compartir tu experiencia
+          directamente por WhatsApp.
+        </p>
+
+        <a class="btn btn-primary"
+           href="https://wa.me/34622172808?text=Hola%2C%20quiero%20compartir%20mi%20opini%C3%B3n%20sobre%20el%20trabajo."
+           target="_blank" rel="noopener noreferrer">
+          Compartir mi opinión
+          <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+
+      <div class="contact-panel reveal">
+
+        <div class="contact-content">
+          <span class="eyebrow">Contacto</span>
+
+          <h2>
+            ¿Empezamos con tu
+            <span class="gold">proyecto?</span>
+          </h2>
+
+          <p>
+            Contacta para explicar qué necesitas y consultar las posibilidades
+            para tu vivienda, local u otro espacio interior.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary"
+             href="https://wa.me/34622172808?text=Hola%2C%20quiero%20consultar%20un%20proyecto%20de%20pladur%2C%20techos%20o%20aislamiento."
+             target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Contactar por WhatsApp
+          </a>
+
+          <div class="contact-phone">
+            WhatsApp
+            <strong>+34 622 172 808</strong>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer class="site-footer">
+  <div class="container footer-main">
+
+    <a class="brand" href="#inicio" aria-label="ZP Interior Systems, inicio">
+      <img class="brand-logo" src="ZP%20logo.png" alt="Logo de ZP Interior Systems">
+      <span>
+        <span class="brand-name">ZP INTERIOR SYSTEMS</span>
+        <span class="brand-subtitle">PLADUR · TECHOS · AISLAMIENTO</span>
+      </span>
+    </a>
+
+    <p class="footer-copy">
+      © <span id="currentYear"></span> ZP Interior Systems.
+    </p>
+
+    <nav class="footer-links" aria-label="Enlaces del pie de página">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="whatsapp-float"
+   href="https://wa.me/34622172808?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20vuestros%20servicios."
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Contactar con ZP Interior Systems por WhatsApp">
+
+  <svg viewBox="0 0 32 32"
+       xmlns="http://www.w3.org/2000/svg"
+       aria-hidden="true">
+    <path fill="currentColor" d="M16 .8C7.7.8 1 7.5 1 15.8c0 2.7.7 5.3 2.1 7.6L1 31l7.8-2.1a15 15 0 0 0 7.2 1.8h.1c8.3 0 15-6.7 15-15S24.4.8 16 .8Zm0 27.3c-2.3 0-4.5-.6-6.4-1.8l-.5-.3-4.6 1.2 1.2-4.5-.3-.5a12.2 12.2 0 1 1 10.6 5.9Zm6.7-9.1c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.8-2.2-2-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.3.4-.6.1-.1 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 3s1.3 3.4 1.5 3.7c.2.2 2.5 3.8 6.1 5.3.9.4 1.6.6 2.2.7.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5Z"/>
+  </svg>
+</a>
+
+<script>
+document.documentElement.classList.add("js-ready");
+
+/* AÑO AUTOMÁTICO */
+const yearElement = document.getElementById("currentYear");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
+
+/* MENÚ PARA MÓVILES */
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+function closeMenu() {
+  if (!menuToggle || !navLinks) return;
+
+  navLinks.classList.remove("open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Abrir menú");
+
+  const icon = menuToggle.querySelector("use");
+
+  if (icon) {
+    icon.setAttribute("href", "#icon-menu");
+  }
+
+  document.body.classList.remove("menu-open");
+}
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("open");
+
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Cerrar menú" : "Abrir menú"
+    );
+
+    const icon = menuToggle.querySelector("use");
+
+    if (icon) {
+      icon.setAttribute("href", isOpen ? "#icon-close" : "#icon-menu");
+    }
+
+    document.body.classList.toggle("menu-open", isOpen);
+  });
+
+  navLinks.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 800) {
+      closeMenu();
+    }
+  });
+}
+
+/* ANIMACIONES AL APARECER LAS SECCIONES */
+const revealElements = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    function (entries, currentObserver) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -30px 0px"
+    }
+  );
+
+  revealElements.forEach(function (element) {
+    observer.observe(element);
+  });
+} else {
+  revealElements.forEach(function (element) {
+    element.classList.add("visible");
+  });
+}
+</script>
+
+</body>
+</html>
